@@ -1,3 +1,12 @@
-/*
-	orange: fb9a03ff;
-*/
+:root{
+	--orange-color: #fb9a03ff;
+	--green-color: #009788ff;
+	--red-color: #f44236ff;
+}
+nav ul > li > a{
+	font-size: 1.1em;
+	font-weight: 500;
+}
+#navbar button{
+	font-weight: bold;
+}
