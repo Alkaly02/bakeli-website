@@ -1,12 +1,56 @@
+/*------------------- Variables ----------------*/
 :root{
 	--orange-color: #fb9a03ff;
 	--green-color: #009788ff;
 	--red-color: #f44236ff;
 }
+
+/*------------------------ Navbar -----------------------*/
 nav ul > li > a{
 	font-size: 1.1em;
 	font-weight: 500;
 }
-#navbar button{
-	font-weight: bold;
+.bold{
+	font-weight: bold !important;
+}
+
+/*----------------------- Hero zone ---------------------*/
+#hero-zone .hero{
+	padding: 4.5rem;
+	background: linear-gradient(
+						to right, 
+						#006b5aff, 
+						#006b5aff 40%, 
+						var(--green-color));
+}
+#hero-zone .card{
+	background-color: inherit;
+	border: none;
+	color: white;
+}
+.card-footer button{
+	font-size: 1.2em;
+	letter-spacing: 0.1rem;
+}
+@media(max-width: 525px){
+	.card-footer button{
+		font-size: 1em;
+		letter-spacing: 0.05rem;
+	}
+}
+@media(max-width: 425px){
+	#hero-zone .hero{
+	padding-top: 3rem;
+	padding-bottom: 2rem;
+	}
+	.card-footer{
+		flex-direction: column !important;
+	}
+	.card-footer button{
+		margin: 0 !important;
+		font-size: 1.1em;
+	}
+	.card-footer button:last-of-type{
+		margin-top: 1em !important;
+	}
 }
